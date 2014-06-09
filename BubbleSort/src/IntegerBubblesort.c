@@ -10,7 +10,15 @@ int integerCompare(void *v1, void *v2) {
 	A= (int *)v1;
 	B= (int *)v2;
 	
-	return *A > *B ? 1 : *A == *B ? 0 : -1;
+	
+     if (*A > *B )
+	 return 1; 
+	 
+     else if( *A ==*B )
+         return 0;
+	 
+     else 
+        return -1;
 }
 
 
